@@ -1,26 +1,30 @@
 package ex2Stagiu1;
 
 public class MarketStagiu2 {
-	public float computePriceWithDiscount(Constants.CLIENT_TYPES categorieProdus, float pretInitial, int timeSpent)
+	public float computePriceWithDiscount(Constants.CLIENT_TYPES productType, float initialPrice, int timeSpent)
 	  {
-	    float pretFinal = 0;
+	    float finalPrice = 0;
 	    float discountByTimeSpent = (timeSpent > Constants.PRODUCT_TIME_LIMIT) ? (float)30/100 : (float)timeSpent/100; 
-	    if (categorieProdus == Constants.CLIENT_TYPES.NEW_CLIENT)
+	    if (productType == Constants.CLIENT_TYPES.NEW_CLIENT)
 	    {
-	    	pretFinal = pretInitial;
+	    	finalPrice = initialPrice;
 	    }
-	    else if (categorieProdus == Constants.CLIENT_TYPES.REGULAR_CLIENT)
+	    else if (productType == Constants.CLIENT_TYPES.REGULAR_CLIENT)
 	    {
-	    	pretFinal = (pretInitial - (0.1f * pretInitial)) - discountByTimeSpent * (pretInitial - (0.1f * pretInitial));
+	    	finalPrice = (initialPrice - (Constants.LOW_DISCOUNT * initialPrice)) - 
+	    			discountByTimeSpent * (initialPrice - (Constants.LOW_DISCOUNT * initialPrice));
 	    }
-	    else if (categorieProdus == Constants.CLIENT_TYPES.FREQUENT_CLIENT)
+	    else if (productType == Constants.CLIENT_TYPES.FREQUENT_CLIENT)
 	    {
-	    	pretFinal = (pretInitial - (0.25f * pretInitial)) - discountByTimeSpent * (pretInitial - (0.25f * pretInitial));
+	    	finalPrice = (initialPrice - (Constants.MEDIUM_DISCOUNT * initialPrice)) - 
+	    			discountByTimeSpent * (initialPrice - (Constants.MEDIUM_DISCOUNT * initialPrice));
 	    }
-	    else if (categorieProdus == Constants.CLIENT_TYPES.PREMIUM_CLIENT)
+	    else if (productType == Constants.CLIENT_TYPES.EMAG_GENIUS)
 	    {
-	    	pretFinal = (pretInitial - (0.35f * pretInitial)) - discountByTimeSpent * (pretInitial - (0.35f * pretInitial));
+	    	finalPrice = (initialPrice - (Constants.HIGH_DISCOUNT * initialPrice)) - 
+	    			discountByTimeSpent * (initialPrice - (Constants.HIGH_DISCOUNT * initialPrice));
 	    }
-	    return pretFinal;
+	    return finalPrice;
 	  }
 }
+
