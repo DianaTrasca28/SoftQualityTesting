@@ -1,0 +1,28 @@
+			DESIGN PATTERN
+3 tipuri : creationale, structurale, comportament
+CREATIONALE - SINGLE TONE, se ocupa cu crearea unei SINGURE instante (baza de date)
+STRUCTURAL - ADAPTER, cand ai mai multe chestii si le faci merge intr-o chestie
+COMPORTAMENTAL - OBSERVER observi ceva si reactionezi
+
+Scale out- adaugi servere
+Scale up- maresti pe ac server?
+
+		SINGLETONE
+1. Constr private
+2. Static method that returns instance
+
+NU E BINE!!! LAZY INITIALIZATION, NOT THREAD SAFE (nu e sigura pt multithreading)
+Se numeste asa pt ca se init tarziu
+if(instance == NULL)
+	instance =new Database();
+return instance; //nu e bn pt ca se pot crea mai multe instante
+
+EARLY INIT, se creaza new Database (instanta) in afara metodei. Exista si aici not thread safe, ceea ce nu e bine.
+EARLY INIT creaza instanta chiar daca nu e fol => NU FOLOSII
+Exista Lazy init care e thread safe(ok)
+
+	O singura instanta => STATIC
+
+BUILDER- se fol cand stii DIN START ce este mandatory si ce e optional
+
+
