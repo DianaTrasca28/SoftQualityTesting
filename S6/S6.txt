@@ -1,0 +1,11 @@
+	BUILDER (creational)
+-daca scriem mai multi constructori cu ac nr de parametrii da eroare => facem un userbuilder si il punem ca parametru in constr
+=> facem clasa in interiorul User ului
+-cand stim chestiile mandatory si cele optionale
+
+	PROTOTYPE (creational)
+-clonam obiectele in loc sa le creeam iar
+-deepcopy
+
+	FACTORY (creational)
+-ascundem de utilizator ce lucruri creez
