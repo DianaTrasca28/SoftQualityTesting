@@ -1,0 +1,19 @@
+			STRUCTURAL
+	ADAPTER
+-ori Adaptam A la B ori B la A (A discount int, B discount client)
+-trebuie sa fie acelasi context
+- adapter adapteaza 2 clase=> folosim interfete in java pt ca nu putem extinde o clasa de mai multe ori
+1. B2A
+	=> A extindem, B implementam
+=>adaptam B la A
+2. A2B
+	=> B extindem, A implementam
+=>adaptam A la B
+
+	DECORATOR(S)
+-adauga ceva in plus la nivel de runtime
+-folosim obiecte concrete
+-avem o clasa efectiva decorator, dar si mai multe decoratoare (=> o alta clasa abstracta ADecorator, fiecare decorator extinde clasa abstracta)
+
+
+	
