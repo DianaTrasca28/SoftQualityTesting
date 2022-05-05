@@ -1,0 +1,2 @@
+-Multe clase
+ex: se apeleaza mai multe metode la apasarea unui click/apelarea unei singure metode
