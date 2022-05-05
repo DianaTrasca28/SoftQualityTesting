@@ -1,0 +1,17 @@
+	1.COMPOSITE
+
+-structura
+		meniu
+
+	0		0
+	|		|
+	pizza		ciorba
+	|		|
+	quatro(pret)	de vacuta(pret)	=>frunze
+
+	2.FLIGHTWEIGHT
+->Prototype se clona
+->Flightweight:
+date permanente			 date temporale
+Nume, adresa, telefon		salon, tratament, doctor
+
