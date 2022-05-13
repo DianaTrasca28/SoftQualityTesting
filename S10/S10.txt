@@ -1,0 +1,17 @@
+Chain of responsability
+-un lant de responsabilitati
+-poate sa paseze toata actiunea, sau sa faca doar o parte iar restul sa paseze
+-handler
+
+STATE
+-ex:angajat-are stare working-face taskul, vacation-nu face taskul, break- nu face pe moment
+-o interfata care se ocupa de stari care au o actiune (generata de stari, daca face taskul sau nu)
+
+TEMPLATE
+-clasa abstracta care cu metodele, se pune in metoda template ordinea metodelor
+-clasa concreta extinsa automat
+
+COMMAND
+-cineva primeste comenzile
+
+
