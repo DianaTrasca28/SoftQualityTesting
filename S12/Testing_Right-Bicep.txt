@@ -1,0 +1,15 @@
+	RIGHT-BICEP
+-TEST ERROR
+-avem anumite constrangeri(1<=note[14]->avg ,1<=note[i]<=10)
+-right-test cu toate val din interval(nu cu capete)
+-B- BOUNDERIES, luam valorile din capatele din interval inchis, daca avem deschis interval, luam valoarea urmatoare (asemanator cu right)
+		-test doar cu capetele
+-E-Error => ex: poate sa fie medie zero? arunca exceptie, ia val din afara intervalului
+-P-Performance-start() avg (val_right) stop time, daca da mai mult de 5 mili sec=>e cam lent
+-I- Inversion
+	-un rezultat (avg) si vezi cum e in raport cu datele, si incerci sa vezi legatura dintre rezultat si datele, 
+	-folosesti rezultatul la inceput, nu verifici in final
+-C- cross check
+	-ai rez=avg (sum/nrEl)
+	-incerci sa gasesti o alta metoda de a det rezultatul (avg) si vezi daca da acelasi rezultat
+	-
