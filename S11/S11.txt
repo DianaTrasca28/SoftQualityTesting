@@ -1,0 +1,21 @@
+	STRATEGY(seamana cu state)
+7 10 3 4 6
+->SORTEAZA CRESC	=>strategii de tip A(ac context)
+->SORTEAZA DESCRESC
+
+->det max		=>strategii de tip B(ac context)
+->det min
+
+-interfata strategie
+-avem clase cu categorii de strategii (Strategia A, Strategia B) 
+-se aplica o singura srategie pe moment
+
+	MEMENTO
+-mai multe versiuni (ex: de cod)
+-vrei sa revii la versiuni precedente( versiunea care functioneaza cel mai bine)
+-Continue Deployment
+
+	OBSERVER
+-actiuni total diferite(sau ac actiune) de la o pers la alta ca urmare a unui eveniment
+-un eveniment care este observat de mai multi subscriberi si fiecare actioneaza diferit
+
